@@ -1,0 +1,123 @@
+/* General Styles */
+body {
+    text-align: center;
+    background: #ffd1dc; /* Soft pink background */
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Main Page (index.html) */
+.main-container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 400px;
+}
+
+.main-container h1 {
+    color: #D63384;
+    font-size: 2.5rem;
+}
+
+.main-container p {
+    font-size: 1.3rem;
+    color: #555;
+}
+
+/* Start Button */
+.start-btn {
+    background: #FF3366;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.start-btn:hover {
+    transform: scale(1.1);
+}
+
+/* Game Page (game.html) */
+.container {
+    margin-top: 50px;
+}
+
+h1 {
+    color: #cc0066;
+}
+
+p {
+    font-size: 18px;
+    color: #662244;
+}
+
+/* Bear Container */
+.bear-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#bear {
+    width: 200px;
+    transition: transform 0.3s;
+}
+
+/* Bear Animations */
+#bear.eating {
+    animation: eat 0.5s ease-in-out alternate infinite;
+}
+
+@keyframes eat {
+    0% { transform: scale(1); }
+    100% { transform: scale(1.1); }
+}
+
+#bear.happy {
+    animation: dance 0.5s infinite alternate;
+}
+
+@keyframes dance {
+    0% { transform: rotate(-5deg); }
+    100% { transform: rotate(5deg); }
+}
+
+#bear.sad {
+    animation: shake 0.5s infinite alternate;
+    filter: grayscale(100%);
+}
+
+@keyframes shake {
+    0% { transform: translateX(-5px); }
+    100% { transform: translateX(5px); }
+}
+
+/* Game Buttons */
+button {
+    background: #ff3366;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+.hidden {
+    display: none;
+}
