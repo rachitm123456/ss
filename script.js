@@ -16,11 +16,11 @@ document.getElementById("feed-btn").addEventListener("click", function () {
 
   if (feedCount < maxFeed) {
     const messages = [
-      "Yum! More please! 💕",
-      "Tasty! Keep going! 😋",
-      "Mmm... yummy! 🍯",
-      "Getting full... 😍",
-      "Almost there! 🐻💕",
+      "Yum! More please!💕",
+      "Tasty! Keep going!😋",
+      "Mmm...yummy🍯",
+      "Getting full...😍",
+      "Almost there!🐻",
     ];
     bearText.innerText = messages[Math.min(feedCount - 1, messages.length - 1)];
   } else {
@@ -35,7 +35,7 @@ document.getElementById("yes-btn").addEventListener("click", function () {
   bear.src = "dudu-dance.gif"; // Show happy bear
   bear.classList.add("happy");
   document.getElementById("proposal").innerHTML =
-    "<h1>YAY! 🎉 Puru said YES! 🥰🐻💕</h1>";
+    "<h1>Yess!! Puru said YES!🥰</h1>";
 });
 
 document.getElementById("no-btn").addEventListener("click", function () {
